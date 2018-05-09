@@ -16,4 +16,8 @@ docker rm <id> -> removes the <id> container
 
 docker build -> builds an image from a Dockerfile
 
-docker build -t -> Name and optionally a tag in the 'name:tag' format
+docker build -t <image_name> -> Name and optionally a tag in the 'name:tag' format
+
+docker port <container> -> List port mappings or a specific mapping for the container
+
+docker-machine ip [arg...] -> Get the IP address of a machine
