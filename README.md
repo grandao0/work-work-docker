@@ -8,6 +8,8 @@ docker run -P -> Publish all exposed ports to random ports
 
 docker run -v -> Bind mount a volume
 
+docker run --name first-site -d -P -v ~/first-site-docker:/usr/share/nginx/html nginx -> Upload some html in nginx and start service
+
 docker images -> List images
 
 docker rmi <image_name> -> Removes <image_name> image
