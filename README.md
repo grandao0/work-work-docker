@@ -14,3 +14,6 @@ docker ps -ls -> display total file sizes
 
 docker rm <id> -> removes the <id> container
 
+docker build -> builds an image from a Dockerfile
+
+docker build -t -> Name and optionally a tag in the 'name:tag' format
