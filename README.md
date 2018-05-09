@@ -1,23 +1,33 @@
 This is a Docker study repository.
 
-docker images -> list images
+docker run -> Run a command in a new container
 
-docker rmi <image_name> -> removes <image_name> image
+docker run -d -> Run container in background and print container ID
 
-docker ps -> list containers (defaults shows just running)
+docker run -P -> Publish all exposed ports to random ports
 
-docker ps -a -> list all containers
+docker run -v -> Bind mount a volume
 
-docker ps -l -> show last created
+docker images -> List images
 
-docker ps -ls -> display total file sizes
+docker rmi <image_name> -> Removes <image_name> image
 
-docker rm <id> -> removes the <id> container
+docker ps -> List containers (defaults shows just running)
 
-docker build -> builds an image from a Dockerfile
+docker ps -a -> List all containers
+
+docker ps -l -> Show last created
+
+docker ps -ls -> Display total file sizes
+
+docker rm <id> -> Removes the <id> container
+
+docker build -> Builds an image from a Dockerfile
 
 docker build -t <image_name> -> Name and optionally a tag in the 'name:tag' format
 
 docker port <container> -> List port mappings or a specific mapping for the container
 
 docker-machine ip [arg...] -> Get the IP address of a machine
+
+docker stop <container> -> Stop one or more running containers
