@@ -33,3 +33,9 @@ docker port <container> -> List port mappings or a specific mapping for the cont
 docker-machine ip [arg...] -> Get the IP address of a machine
 
 docker stop <container> -> Stop one or more running containers
+
+docker commit -m "<message>" -a "<hub_user>" <container_id> <hub_user/hub_name:tag> -> Commit image to Docker Hub
+
+docker push <hub_user/hub_name:tag> -> Push the image to the Docker Hub
+
+docker history <image_name> -> List image history
