@@ -32,10 +32,20 @@ docker port <container> -> List port mappings or a specific mapping for the cont
 
 docker-machine ip [arg...] -> Get the IP address of a machine
 
+docker start <container> -> Start one or more running containers
+
 docker stop <container> -> Stop one or more running containers
 
 docker commit -m "<message>" -a "<hub_user>" <container_id> <hub_user/hub_name:tag> -> Commit image to Docker Hub
 
 docker push <hub_user/hub_name:tag> -> Push the image to the Docker Hub
 
+docker pull <hub_user/hub_name:tag> -> Pull the image from the Docker Hub
+
 docker history <image_name> -> List image history
+
+docker rename <container_id> -> Renames the container name
+
+docker exec -it <container_id> <command> -> Run a command in a running container
+
+docker exec -it 9a9610bdf2b0 /bin/bash -> Opens the bash of a running centos6 container
